@@ -1,0 +1,24 @@
+# PistonFilter Configuration
+# List of block material names that pistons are NOT allowed to move.
+# Uses Bukkit Material names: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+
+forbidden-blocks:
+  - OBSIDIAN
+  - BEDROCK
+  - BARRIER
+  - END_PORTAL_FRAME
+  - REINFORCED_DEEPSLATE
+  - CRYING_OBSIDIAN
+  - RESPAWN_ANCHOR
+  - ANCIENT_DEBRIS
+  - ENCHANTING_TABLE
+  - ENDER_CHEST
+
+# If true, sends a message to nearby players when a piston move is cancelled.
+notify-players: false
+
+# Radius (in blocks) for player notification.
+notify-radius: 10
+
+# Message sent to players near a cancelled piston. Supports & colour codes.
+notify-message: '&cA piston was blocked by a protected block!'

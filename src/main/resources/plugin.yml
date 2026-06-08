@@ -1,0 +1,17 @@
+name: PistonFilter
+version: '1.0.0'
+main: dev.pistonfilter.PistonFilterPlugin
+api-version: '1.21'
+description: Cancels piston movement when a forbidden block is detected in the push chain (up to 16 blocks).
+authors: [ YourName ]
+
+commands:
+  pistonfilter:
+    description: Manage PistonFilter settings
+    usage: /pistonfilter <reload|list|add|remove> [block]
+    permission: pistonfilter.admin
+
+permissions:
+  pistonfilter.admin:
+    description: Full access to PistonFilter commands
+    default: op
